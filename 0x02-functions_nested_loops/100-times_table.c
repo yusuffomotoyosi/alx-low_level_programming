@@ -1,11 +1,11 @@
-#include "main.c"
+#include "main.h"
 void print_times_table(int n)
 {
 	int x = 0, y, z;
 
 	if (n > 15 || n < 0)
 		return;
-	while (x <= n)
+	while (x n<= n)
 	{
 		for (y = 0; y <= n; y++)
 		{
@@ -38,6 +38,6 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
-		x++;
+		x++; 
 	}
 }
