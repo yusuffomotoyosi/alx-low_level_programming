@@ -4,12 +4,6 @@
  *@c: tested character
  *Return: returns 1 if it is uppercase , 0 if not
  */
-
-/**
- * _isdigit - Check for digits (0 through 9)
- * @c: int type param
- * Return: 1 if digit, else 0
- */
 int _isdigit(int c)
 {
 	if (c > 47 && c < 58)
@@ -17,3 +11,4 @@ int _isdigit(int c)
 
 	return (0);
 }
+
