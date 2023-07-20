@@ -1,23 +1,27 @@
 #include "main.h"
-void print_diagonal(int n)
+/**
+ * print_square - print a square
+ * @size: size of square
+ * Description: Can only use _putchar to print. Use '#' to print square.
+ */
+void print_square(int size)
 {
-	int c, i;
+	int x, y;
 
-	c = 0;
+	y = 0;
 
-	while (n > 0)
+	if (size < 1)
+		_putchar('\n');
+
+	while (y < size)
 	{
-		i = c;
-		while (i > 0)
+		x = 0;
+		while (x < size)
 		{
-			_putchar(' ');
-			i--;
+			_putchar('#');
+			x++;
 		}
-		_putchar('\\');
 		_putchar('\n');
-		c++;
-		n--;
+		y++;
 	}
-	if (c < 1)
-		_putchar('\n');
 }
